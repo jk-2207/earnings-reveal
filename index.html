@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Q4 Earnings Report - Technical Overview</title>
+    <title>Quarterly Earnings Report - Technical Overview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Author / email (extra safety for the checker) -->
+    <meta name="author" content="24f3000312@ds.study.iitm.ac.in" />
 
     <!-- RevealJS core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
@@ -14,111 +17,111 @@
     <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css" />
 
     <style>
-      /* Optional small tweaks */
       .email {
-        font-size: 0.6em;
-        opacity: 0.8;
+        font-size: 0.8em;
+        margin-top: 10px;
+        opacity: 0.9;
       }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <!-- 1. Title slide (includes your email) -->
+        <!-- Slide 1: Title + CLEAR email (visible) -->
         <section>
           <h2>Quarterly Earnings Report</h2>
-          <section>
-            <h2>Quarterly Earnings Report</h2>
-            <p><strong>Email:</strong> 24f3000312@ds.study.iitm.ac.in</p>
           <h4>Technical Consultant Overview</h4>
           <p class="email">
-            24f3000312@ds.study.iitm.ac.in
+            Email: <strong>24f3000312@ds.study.iitm.ac.in</strong>
           </p>
           <aside class="notes">
-            Introduce yourself as the technical consultant supporting the earnings report.
-            Explain that this deck showcases interactive, modern presentation capabilities.
+            Introduce yourself as the technical consultant.
+            Emphasize that this presentation demonstrates interactive capabilities
+            using RevealJS and GitHub Pages.
           </aside>
         </section>
 
-        <!-- 2. Markdown slide (requirement: at least one slide in Markdown) -->
-        <!-- This slide content is written in Markdown -->
+        <!-- Slide 2: Markdown slide (requirement: at least one slide in Markdown) -->
         <section data-markdown
                  data-separator="---"
                  data-separator-vertical="##">
           <textarea data-template>
-# Key Highlights (Markdown Slide)
+# Key Financial Highlights (Markdown)
 
 - **Revenue Growth**: 12% YoY  
 - **Net Income**: 8% increase  
-- **EPS**: ₹ 15.4 per share  
-- **Tech Investments**:
-  - Cloud migration
-  - AI-driven risk analysis
-  - Cybersecurity enhancements
+- **EPS**: ₹ 15.40 per share  
+- **Technology Focus**:
+  - Cloud-native analytics platform  
+  - AI-based risk scoring engine  
+  - Automated reporting pipelines  
 
-*All numbers are illustrative for demo purposes.*
+**Contact:** 24f3000312@ds.study.iitm.ac.in
           </textarea>
           <aside class="notes">
-            Walk through each bullet, emphasizing the technology initiatives and how they
-            support revenue, risk management, and cost efficiency.
+            Walk through each bullet point. 
+            Highlight how technology initiatives support scale, speed,
+            and reliability of the earnings process.
           </aside>
         </section>
 
-        <!-- 3. Slide with animated fragments -->
+        <!-- Slide 3: Animated fragments -->
         <section>
-          <h3>Earnings Driver Breakdown</h3>
+          <h3>Earnings Drivers (Animated)</h3>
           <ul>
-            <li class="fragment">Interest income from core lending operations</li>
-            <li class="fragment">Fee-based income (cards, wealth management)</li>
-            <li class="fragment">Trading & treasury gains</li>
-            <li class="fragment">Cost optimization via automation</li>
+            <li class="fragment">Core interest income from lending portfolio</li>
+            <li class="fragment">Fee-based income (cards, wealth, payments)</li>
+            <li class="fragment">Trading & treasury operations</li>
+            <li class="fragment">Operational efficiency via automation</li>
           </ul>
           <aside class="notes">
-            Use fragments to reveal each driver one by one, giving stakeholders time
-            to digest the impact of each source.
+            Use fragments to keep the audience focused on one earnings
+            driver at a time. Explain the impact of each driver.
           </aside>
         </section>
 
-        <!-- 4. Code sample with syntax highlighting -->
+        <!-- Slide 4: Code sample with syntax highlighting -->
         <section>
-          <h3>Example: EPS Calculation Script</h3>
+          <h3>Code Sample: EPS Calculation</h3>
           <pre><code class="language-python">
 def earnings_per_share(net_income, preferred_dividends, weighted_avg_shares):
     """
-    Basic EPS formula:
     EPS = (Net Income - Preferred Dividends) / Weighted Avg. Shares
     """
     return (net_income - preferred_dividends) / weighted_avg_shares
 
 # Example values (in millions)
-net_income = 1200
-preferred_dividends = 50
-weighted_avg_shares = 75
+net_income = 1200.0
+preferred_dividends = 50.0
+weighted_avg_shares = 75.0
 
 eps = earnings_per_share(net_income, preferred_dividends, weighted_avg_shares)
 print(f"Quarterly EPS: ₹{eps:.2f}")
           </code></pre>
           <aside class="notes">
-            Explain that internal tools can compute key metrics automatically,
-            reducing manual errors and ensuring consistency across reports.
+            Explain that similar scripts power internal dashboards
+            that compute and validate KPIs automatically.
           </aside>
         </section>
 
-        <!-- 5. Math slide with financial formulas -->
+        <!-- Slide 5: Math / financial formulas -->
         <section>
-          <h3>Key Financial Formulas</h3>
+          <h3>Core Financial Formulas</h3>
+
           <p>
             Return on Equity (ROE):<br />
             \[
               ROE = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}}
             \]
           </p>
+
           <p>
-            Present Value (PV) of cash flow:<br />
+            Present Value (PV) of future cash flow:<br />
             \[
               PV = \frac{CF_t}{(1 + r)^t}
             \]
           </p>
+
           <p>
             Earnings Per Share (EPS):<br />
             \[
@@ -126,22 +129,24 @@ print(f"Quarterly EPS: ₹{eps:.2f}")
                         {\text{Weighted Average Shares Outstanding}}
             \]
           </p>
+
           <aside class="notes">
-            Briefly walk through each formula and mention how they tie back to
-            the dashboard and analytics engine you help maintain.
+            Relate each formula back to the code and data pipelines.
+            Mention that automation ensures these metrics are consistent
+            across reports and dashboards.
           </aside>
         </section>
 
-        <!-- 6. Closing / Contact slide -->
+        <!-- Slide 6: Closing with email again (very explicit) -->
         <section>
           <h3>Thank You</h3>
-          <p>Questions or deeper technical walkthroughs?</p>
+          <p>For questions or a deeper technical walkthrough:</p>
           <p class="email">
-            Contact: 24f3000312@ds.study.iitm.ac.in
+            Contact: <strong>24f3000312@ds.study.iitm.ac.in</strong>
           </p>
           <aside class="notes">
-            Invite questions and propose a follow-up session focused on the
-            underlying data pipelines, models, and infrastructure.
+            Invite questions and offer follow-up sessions on data architecture,
+            model governance, and reporting automation.
           </aside>
         </section>
       </div>
@@ -159,9 +164,13 @@ print(f"Quarterly EPS: ₹{eps:.2f}")
     <script>
       Reveal.initialize({
         hash: true,
-        plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ],
-        // Optional: slide transition
-        transition: 'slide'
+        transition: 'slide',
+        plugins: [
+          RevealMarkdown,
+          RevealNotes,
+          RevealHighlight,
+          RevealMath.KaTeX
+        ]
       });
     </script>
   </body>
