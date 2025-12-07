@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Q4 Earnings Report - Technical Overview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RevealJS core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css" />
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme" />
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/plugin/highlight/monokai.css" />
+
+    <style>
+      /* Optional small tweaks */
+      .email {
+        font-size: 0.6em;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- 1. Title slide (includes your email) -->
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <h4>Technical Consultant Overview</h4>
+          <p class="email">
+            24f3000312@ds.study.iitm.ac.in
+          </p>
+          <aside class="notes">
+            Introduce yourself as the technical consultant supporting the earnings report.
+            Explain that this deck showcases interactive, modern presentation capabilities.
+          </aside>
+        </section>
+
+        <!-- 2. Markdown slide (requirement: at least one slide in Markdown) -->
+        <!-- This slide content is written in Markdown -->
+        <section data-markdown
+                 data-separator="---"
+                 data-separator-vertical="##">
+          <textarea data-template>
+# Key Highlights (Markdown Slide)
+
+- **Revenue Growth**: 12% YoY  
+- **Net Income**: 8% increase  
+- **EPS**: ₹ 15.4 per share  
+- **Tech Investments**:
+  - Cloud migration
+  - AI-driven risk analysis
+  - Cybersecurity enhancements
+
+*All numbers are illustrative for demo purposes.*
+          </textarea>
+          <aside class="notes">
+            Walk through each bullet, emphasizing the technology initiatives and how they
+            support revenue, risk management, and cost efficiency.
+          </aside>
+        </section>
+
+        <!-- 3. Slide with animated fragments -->
+        <section>
+          <h3>Earnings Driver Breakdown</h3>
+          <ul>
+            <li class="fragment">Interest income from core lending operations</li>
+            <li class="fragment">Fee-based income (cards, wealth management)</li>
+            <li class="fragment">Trading & treasury gains</li>
+            <li class="fragment">Cost optimization via automation</li>
+          </ul>
+          <aside class="notes">
+            Use fragments to reveal each driver one by one, giving stakeholders time
+            to digest the impact of each source.
+          </aside>
+        </section>
+
+        <!-- 4. Code sample with syntax highlighting -->
+        <section>
+          <h3>Example: EPS Calculation Script</h3>
+          <pre><code class="language-python">
+def earnings_per_share(net_income, preferred_dividends, weighted_avg_shares):
+    """
+    Basic EPS formula:
+    EPS = (Net Income - Preferred Dividends) / Weighted Avg. Shares
+    """
+    return (net_income - preferred_dividends) / weighted_avg_shares
+
+# Example values (in millions)
+net_income = 1200
+preferred_dividends = 50
+weighted_avg_shares = 75
+
+eps = earnings_per_share(net_income, preferred_dividends, weighted_avg_shares)
+print(f"Quarterly EPS: ₹{eps:.2f}")
+          </code></pre>
+          <aside class="notes">
+            Explain that internal tools can compute key metrics automatically,
+            reducing manual errors and ensuring consistency across reports.
+          </aside>
+        </section>
+
+        <!-- 5. Math slide with financial formulas -->
+        <section>
+          <h3>Key Financial Formulas</h3>
+          <p>
+            Return on Equity (ROE):<br />
+            \[
+              ROE = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}}
+            \]
+          </p>
+          <p>
+            Present Value (PV) of cash flow:<br />
+            \[
+              PV = \frac{CF_t}{(1 + r)^t}
+            \]
+          </p>
+          <p>
+            Earnings Per Share (EPS):<br />
+            \[
+              EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}
+                        {\text{Weighted Average Shares Outstanding}}
+            \]
+          </p>
+          <aside class="notes">
+            Briefly walk through each formula and mention how they tie back to
+            the dashboard and analytics engine you help maintain.
+          </aside>
+        </section>
+
+        <!-- 6. Closing / Contact slide -->
+        <section>
+          <h3>Thank You</h3>
+          <p>Questions or deeper technical walkthroughs?</p>
+          <p class="email">
+            Contact: 24f3000312@ds.study.iitm.ac.in
+          </p>
+          <aside class="notes">
+            Invite questions and propose a follow-up session focused on the
+            underlying data pipelines, models, and infrastructure.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- RevealJS core JS -->
+    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+
+    <!-- Plugins: Markdown, Notes, Highlight, Math -->
+    <script src="https://unpkg.com/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealNotes, RevealHighlight, RevealMath.KaTeX ],
+        // Optional: slide transition
+        transition: 'slide'
+      });
+    </script>
+  </body>
+</html>
